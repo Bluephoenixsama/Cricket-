@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+void Toss_Centre(){
+	int toss,choice;
+	cout<<"Who won the toss?\n1.Team1\t2.Team2\t: ";
+	cin>>toss;
+	cout<<"What choice?\n1.Bat\t2.Bowl\t: ";
+	cin>>choice;
+
+
+}
+
+int main(){
+Toss_Centre();
+return 0;
+}
+
+
+
+switch (toss)
+    {
+
+    case 1:
+        cout <<"Team1 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST\n";
+            break;
+        }
+        break;
+
+    case 2:
+        cout <<"Team2 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST.\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST.\n";
+            break;
+        }
+        break;
+    }

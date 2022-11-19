@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+void display(int toss,int choice){
+	cout<<"Welcome to the match between\n"<<Team1<<"\tVS\t"<<Team2<<endl;
+	cout<<"\n\n\tIt's a "<<over<<" overs game per side.\n";
+	cout<<"\n\n\tIt's being played at : "<<venue<<endl;
+	cout<<"\n\n\n">;
+	switch (toss)
+    {
+
+    case 1:
+        cout <<"Team1 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST\n";
+            break;
+        }
+        break;
+
+    case 2:
+        cout <<"Team2 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST.\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST.\n";
+            break;
+        }
+        break;
+    }
+}

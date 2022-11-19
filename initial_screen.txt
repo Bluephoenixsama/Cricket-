@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cstdlib>
+#include<string.h>
+#include<string>
+#include<time.h>
+
+using namespace std;
+static int mn=10;
+int BALLS,innings=1,target;
+class Team1;
+class Team2;
+template<class x> void MyTeam(x o);
+template<class z> void Score_board(z &t);
+int extra_choice(string);
+string match_name,venue,result,series_type,team1,team2,toss_choice,toss_winner,toss_loser;
+int n,total_overs,series_match_no,no_of_matches;
+void Match_Centre()
+			{
+				system("clear");
+				char ch;
+				cout<<endl<<"Match  INFO"<<endl;
+				cout<<endl<<"Overs : ";
+				cin>>total_overs;
+				BALLS=(total_overs)*6;
+				cout<<endl<<"Team 1 : ";
+				getline(cin,team1);
+				cout<<endl<<"Team 2 : ";
+				getline(cin,team2);
+				cout<<endl<<"Venue : ";
+				getline(cin,venue);
+			}	
+int main()
+{
+    Match_Centre();
+    return 0;
+}

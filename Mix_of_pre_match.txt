@@ -1,0 +1,79 @@
+#include<iostream>
+#include<cstdlib>
+#include<string.h>
+#include<string>
+#include<time.h>
+
+using namespace std;
+int BALLS;
+class Team1;
+class Team2;
+string ,venue,result,team1,team2;
+int n,total_overs,series_match_no,no_of_matches;
+void Match_Centre()
+			{
+				system("clear");
+				char ch;
+				cout<<endl<<"Match  INFO"<<endl;
+				cout<<endl<<"Overs : ";
+				cin>>total_overs;
+				BALLS=(total_overs)*6;
+				cout<<endl<<"Team 1 : ";
+				getline(cin,team1);
+				cout<<endl<<"Team 2 : ";
+				getline(cin,team2);
+				cout<<endl<<"Venue : ";
+				getline(cin,venue);
+				Toss_Centre();
+			}	
+void Toss_Centre(){
+	int toss,choice;
+	cout<<"Who won the toss?\n1.Team1\t2.Team2\t: ";
+	cin>>toss;
+	cout<<"What choice?\n1.Bat\t2.Bowl\t: ";
+	cin>>choice;
+	display(toss,choice);
+}
+void display(int toss,int choice){
+	cout<<"Welcome to the match between\n"<<team1<<"\tVS\t"<<team2<<endl;
+	cout<<"\n\n\tIt's a "<<totals_over<<" overs game per side.\n";
+	cout<<"\n\tSo it's a "<<BALLS<<" balls game per side.\n";
+	cout<<"\n\n\tIt's being played at : "<<venue<<endl;
+	cout<<"\n\n\n">;
+	switch (toss)
+    {
+
+    case 1:
+        cout <<"Team1 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST\n";
+            break;
+        }
+        break;
+
+    case 2:
+        cout <<"Team2 WON THE TOSS and decided to ";
+        switch (choice)
+        {
+        case 1:
+            cout << "BAT FIRST.\n";
+            break;
+        case 2:
+            cout << "BOWL FIRST.\n";
+            break;
+        }
+        break;
+    }
+}
+
+
+int main()
+{
+    Match_Centre();
+    return 0;
+}
